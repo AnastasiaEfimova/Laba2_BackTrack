@@ -1,0 +1,14 @@
+C:\Users\Denvormine\Desktop\Настя\BackTrack\BackTrack\bin\Debug\BackTrack.exe.config
+C:\Users\Denvormine\Desktop\Настя\BackTrack\BackTrack\bin\Debug\BackTrack.exe
+C:\Users\Denvormine\Desktop\Настя\BackTrack\BackTrack\bin\Debug\BackTrack.pdb
+C:\Users\Denvormine\Desktop\Настя\BackTrack\BackTrack\obj\Debug\BackTrack.csprojAssemblyReference.cache
+C:\Users\Denvormine\Desktop\Настя\BackTrack\BackTrack\obj\Debug\EmilGraph.EdgeForm.resources
+C:\Users\Denvormine\Desktop\Настя\BackTrack\BackTrack\obj\Debug\EmilGraph.MainForm.resources
+C:\Users\Denvormine\Desktop\Настя\BackTrack\BackTrack\obj\Debug\BackTrack.Properties.Resources.resources
+C:\Users\Denvormine\Desktop\Настя\BackTrack\BackTrack\obj\Debug\EmilGraph.TaskForm.resources
+C:\Users\Denvormine\Desktop\Настя\BackTrack\BackTrack\obj\Debug\EmilGraph.TopDelForm.resources
+C:\Users\Denvormine\Desktop\Настя\BackTrack\BackTrack\obj\Debug\EmilGraph.topForm.resources
+C:\Users\Denvormine\Desktop\Настя\BackTrack\BackTrack\obj\Debug\BackTrack.csproj.GenerateResource.cache
+C:\Users\Denvormine\Desktop\Настя\BackTrack\BackTrack\obj\Debug\BackTrack.csproj.CoreCompileInputs.cache
+C:\Users\Denvormine\Desktop\Настя\BackTrack\BackTrack\obj\Debug\BackTrack.exe
+C:\Users\Denvormine\Desktop\Настя\BackTrack\BackTrack\obj\Debug\BackTrack.pdb
