@@ -156,40 +156,13 @@ namespace EmilGraph.Graphs
             }
             return res;
         }
-        public bool CheckSolve(int[] colors)
-        {
-            for (int i = 0; i < topList.Count; i++)
-            {
-                if (colors[i] == 0)
-                {
-                    break;
-                }
-                int index = -1;
-                do
-                {
-                    if (index == edgeList.Count)
-                    {
-                        break;
-                    }
-                    index = edgeList.FindIndex(++index, x => x.Item1 == i || x.Item2 == i);
-                    if (index != -1)
-                    {
-                        int top = i == edgeList[index].Item1 ? edgeList[index].Item2 : edgeList[index].Item1;
-                        if (colors[i] == colors[top])
-                        {
-                            return false;
-                        }
-                    }
-                } while (index != -1);
-            }
-            return true;
-        }
         
         public void Solve(int topIndex, double distance)
         {
             topSet = new HashSet<int>();
             visitedSet = new HashSet<int>();
             TrySolve(topIndex, distance);
+            topSet = new HashSet<int>(topSet.Except(visitedSet));
             topSet.Remove(topIndex);
             string text = "Веришны, входящие в периферию " + topIndex.ToString() + " города: ";
             foreach (int i in topSet)
@@ -202,19 +175,30 @@ namespace EmilGraph.Graphs
         HashSet<int> visitedSet;
         private void TrySolve(int topIndex, double distance)
         {
-            if (distance < 0 && !visitedSet.Contains(topIndex))
+            if (distance < 0)
             {
                 topSet.Add(topIndex);
             }
-            visitedSet.Add(topIndex);
+            if (distance >= 0)
+            {
+                visitedSet.Add(topIndex);
+            }
             foreach (Tuple<int, int, double> tuple in edgeList.FindAll(t => t.Item1 == topIndex || t.Item2 == topIndex))
             {
-                if (tuple.Item1 != topIndex && !visitedSet.Contains(tuple.Item1))
+                if (tuple.Item1 != topIndex)
                 {
+                    if (topSet.Contains(tuple.Item1) && distance < 0)
+                    {
+                        continue;
+                    }
                     TrySolve(tuple.Item1, distance - tuple.Item3);
                 }
-                else if (!visitedSet.Contains(tuple.Item2))
+                else
                 {
+                    if (topSet.Contains(tuple.Item2) && distance < 0)
+                    {
+                        continue;
+                    }
                     TrySolve(tuple.Item2, distance - tuple.Item3);
                 }
             }

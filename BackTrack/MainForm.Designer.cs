@@ -86,35 +86,35 @@
             // fileCreate
             // 
             this.fileCreate.Name = "fileCreate";
-            this.fileCreate.Size = new System.Drawing.Size(180, 22);
+            this.fileCreate.Size = new System.Drawing.Size(154, 22);
             this.fileCreate.Text = "Создать";
             this.fileCreate.Click += new System.EventHandler(this.FileCreate_Click);
             // 
             // fileOpen
             // 
             this.fileOpen.Name = "fileOpen";
-            this.fileOpen.Size = new System.Drawing.Size(180, 22);
+            this.fileOpen.Size = new System.Drawing.Size(154, 22);
             this.fileOpen.Text = "Открыть";
             this.fileOpen.Click += new System.EventHandler(this.FileOpen_Click);
             // 
             // fileSave
             // 
             this.fileSave.Name = "fileSave";
-            this.fileSave.Size = new System.Drawing.Size(180, 22);
+            this.fileSave.Size = new System.Drawing.Size(154, 22);
             this.fileSave.Text = "Сохранить";
             this.fileSave.Click += new System.EventHandler(this.FileSave_Click);
             // 
             // fileSaveAs
             // 
             this.fileSaveAs.Name = "fileSaveAs";
-            this.fileSaveAs.Size = new System.Drawing.Size(180, 22);
+            this.fileSaveAs.Size = new System.Drawing.Size(154, 22);
             this.fileSaveAs.Text = "Сохранить как";
             this.fileSaveAs.Click += new System.EventHandler(this.FileSaveAs_Click);
             // 
             // fileClear
             // 
             this.fileClear.Name = "fileClear";
-            this.fileClear.Size = new System.Drawing.Size(180, 22);
+            this.fileClear.Size = new System.Drawing.Size(154, 22);
             this.fileClear.Text = "Очистить";
             // 
             // topMenu
@@ -152,14 +152,14 @@
             // edgeAdd
             // 
             this.edgeAdd.Name = "edgeAdd";
-            this.edgeAdd.Size = new System.Drawing.Size(126, 22);
+            this.edgeAdd.Size = new System.Drawing.Size(180, 22);
             this.edgeAdd.Text = "Добавить";
             this.edgeAdd.Click += new System.EventHandler(this.EdgeAdd_Click);
             // 
             // edgeDelete
             // 
             this.edgeDelete.Name = "edgeDelete";
-            this.edgeDelete.Size = new System.Drawing.Size(126, 22);
+            this.edgeDelete.Size = new System.Drawing.Size(180, 22);
             this.edgeDelete.Text = "Удалить";
             this.edgeDelete.Click += new System.EventHandler(this.EdgeDelete_Click);
             // 
@@ -202,7 +202,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
-            this.Text = "Раскраска графов";
+            this.Text = "Периферия городов";
             ((System.ComponentModel.ISupportInitialize)(this.picture)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
